@@ -1,0 +1,100 @@
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
+  \**********************************************************************/
+:root {
+  --bg-color: #333;
+  --screen-bg: #444;
+  --btn-gray: #777;
+  --btn-orange: #f99c00;
+  --text-color: white;
+}
+
+.light-theme {
+  --bg-color: #fff;
+  --screen-bg: #f9f9f9;
+  --btn-gray: #ddd;
+  --btn-orange: #ff9800;
+  --text-color: black;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle label {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.theme-toggle input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.calculator {
+  width: 320px;
+  background: #333;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.calculator-screen {
+  background: #444;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #222;
+}
+
+.btn {
+  height: 70px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.gray {
+  background: #777;
+}
+
+.btn.orange {
+  background: #f99c00;
+}
+
+.btn:active {
+  filter: brightness(0.9);
+}
+
+.btn.zero {
+  grid-column: span 2;
+}
+
