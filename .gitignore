@@ -1,0 +1,37 @@
+# Build output
+dist/
+
+# Dependency directories
+node_modules/
+
+# Temporary files and logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store           # macOS
+Thumbs.db           # Windows
+*.swp               # vim swap files
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# Environment variables (if you use an env file)
+.env
+.env.local
+.env.*.local
+
+# Lint and formatting caches
+.eslintcache
+.prettiercache
+
+# Webpack-specific
+*.cache
+.stats.json
+
+# Optional: Ignore the build configuration if it's specific to local setups
+*.config.local.js
